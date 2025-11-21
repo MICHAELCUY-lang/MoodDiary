@@ -79,13 +79,6 @@ Pastikan proyek melakukan sinkronisasi Gradle dengan benar (mengunduh semua depe
 Pilih perangkat Emulator atau Device fisik, lalu tekan tombol Run (▶️)
 
 
-
-## 📄 Lisensi
-
-Proyek ini dibuat untuk keperluan tugas akhir.
-
----
-
 ##  Acknowledgments
 
 - Material Design Components
