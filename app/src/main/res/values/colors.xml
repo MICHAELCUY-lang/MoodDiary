@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- PALET WARNA UTAMA (BARU) -->
+    <color name="primary_1">#060047</color>   <!-- deep navy -->
+    <color name="primary_2">#B3005E</color>   <!-- dark magenta -->
+    <color name="primary_3">#E90064</color>   <!-- bright pink -->
+    <color name="primary_4">#FF5F9E</color>   <!-- soft pink -->
+
+    <!-- Background / Surface -->
+    <color name="background">#FFF5FA</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#555555</color>
+
+    <!-- ===================================================== -->
+    <!--  ALIAS UNTUK NAMA-NAMA LAMA (BIAR LAYOUT TIDAK ERROR) -->
+    <!-- ===================================================== -->
+
+    <!-- untuk nav_item_text_color.xml -->
+    <color name="brand_dark_blue">@color/primary_1</color>
+
+    <!-- dipakai di banyak layout lama -->
+    <color name="color_primary">@color/primary_3</color>
+    <color name="color_accent">@color/primary_4</color>
+
+    <color name="color_background">@color/background</color>
+    <color name="color_surface">@color/surface</color>
+
+    <color name="color_text_primary">@color/text_primary</color>
+    <color name="color_text_secondary">@color/text_secondary</color>
+
+</resources>

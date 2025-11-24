@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== App base theme (CUMA SATU) ===== -->
+    <style name="Theme.MoodDiary" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- ========================= -->
+    <!-- Mood radio button styling -->
+    <!-- ========================= -->
+    <style name="MoodRadioStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <!-- lingkaran / selector radio -->
+        <item name="android:button">@drawable/radio_selector</item>
+        <!-- teks -->
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- ================================ -->
+    <!-- Activity checkbox (multi select) -->
+    <!-- ================================ -->
+    <style name="ActivityCheckboxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <!-- custom checkbox background -->
+        <item name="android:button">@drawable/checkbox_background</item>
+        <!-- teks -->
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- ================================== -->
+    <!-- Mood bubble radio (chip horizontal) -->
+    <!-- ================================== -->
+    <style name="MoodChipRadio" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <!-- hide default circle -->
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+</resources>

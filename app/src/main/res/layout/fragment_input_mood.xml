@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How Are You Feeling Today?"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/primary_1"
+            android:layout_marginBottom="18dp" />
+
+        <!-- MOOD OPTIONS -->
+        <RadioGroup
+            android:id="@+id/rg_mood_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"
+            android:weightSum="5">
+
+            <RadioButton
+                android:id="@+id/rb_mood5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amazing"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/primary_4"
+                android:buttonTint="@color/primary_4"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/rb_mood4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Happy"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/primary_3"
+                android:buttonTint="@color/primary_3"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/rb_mood3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Neutral"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/primary_2"
+                android:buttonTint="@color/primary_2"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/rb_mood2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Low"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/primary_1"
+                android:buttonTint="@color/primary_1"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/rb_mood1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bad"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/primary_1"
+                android:buttonTint="@color/primary_1"
+                android:gravity="center" />
+        </RadioGroup>
+
+        <!-- NOTES CARD -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/surface">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Notes"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:textColor="@color/primary_1"
+                    android:layout_marginBottom="10dp" />
+
+                <EditText
+                    android:id="@+id/et_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Write something you want to remember today..."
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/text_primary"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"
+                    android:maxLines="6"
+                    android:gravity="top"
+                    android:background="@android:color/transparent"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ACTIVITIES TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Activities"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/primary_1"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_activities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work / Study"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/text_primary"
+                android:padding="12dp" />
+
+            <CheckBox
+                android:id="@+id/cb_social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Socializing"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/text_primary"
+                android:padding="12dp" />
+
+            <CheckBox
+                android:id="@+id/cb_sport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Workout"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/text_primary"
+                android:padding="12dp" />
+
+            <CheckBox
+                android:id="@+id/cb_relax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relax / Hobbies"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/text_primary"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- SAVE BUTTON -->
+        <Button
+            android:id="@+id/btn_save_mood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Mood"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary_3"
+            android:layout_marginTop="38dp"
+            android:paddingVertical="16dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</ScrollView>
