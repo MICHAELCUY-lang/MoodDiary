@@ -3,29 +3,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+<<<<<<< HEAD
     android:padding="20dp">
+=======
+    android:padding="16dp">
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
 
     <CalendarView
         android:id="@+id/mood_calendar_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="20dp"/>
+=======
+        android:layout_marginBottom="16dp"/>
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Selected Mood History:"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/primary_1"
         android:layout_marginBottom="8dp"/>
+=======
+        android:text="Riwayat Mood yang Dipilih:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
 
     <TextView
         android:id="@+id/tv_selected_mood_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Please tap a date on the calendar."
         android:textColor="@color/text_primary"
         android:textSize="16sp"
         android:padding="8dp"/>
 </LinearLayout>
+=======
+        android:text="Silakan pilih tanggal di kalender."
+        android:padding="8dp"/>
+
+</LinearLayout>
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377

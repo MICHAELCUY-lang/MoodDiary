@@ -3,7 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@color/background">
+=======
+    android:background="@color/color_background">
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,6 +15,7 @@
         android:orientation="vertical"
         android:padding="24dp">
 
+<<<<<<< HEAD
         <!-- TITLE -->
         <TextView
             android:layout_width="wrap_content"
@@ -23,11 +28,23 @@
             android:layout_marginBottom="18dp" />
 
         <!-- MOOD OPTIONS -->
+=======
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagaimana Perasaan Anda?"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_text_primary"
+            android:layout_marginBottom="16dp" />
+
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
         <RadioGroup
             android:id="@+id/rg_mood_level"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+<<<<<<< HEAD
             android:gravity="center"
             android:layout_marginBottom="28dp"
             android:weightSum="5">
@@ -102,27 +119,57 @@
             app:cardCornerRadius="20dp"
             app:cardElevation="10dp"
             app:cardBackgroundColor="@color/surface">
+=======
+            android:layout_marginBottom="24dp"
+            android:weightSum="5">
+
+            <RadioButton android:id="@+id/rb_mood5" android:text="🤩 Fantastis" style="@style/MoodRadioStyle" />
+            <RadioButton android:id="@+id/rb_mood4" android:text="😊 Senang" style="@style/MoodRadioStyle" />
+            <RadioButton android:id="@+id/rb_mood3" android:text="😐 Biasa" style="@style/MoodRadioStyle" />
+            <RadioButton android:id="@+id/rb_mood2" android:text="😔 Sedih" style="@style/MoodRadioStyle" />
+            <RadioButton android:id="@+id/rb_mood1" android:text="😠 Buruk" style="@style/MoodRadioStyle" />
+        </RadioGroup>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="24dp">
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+<<<<<<< HEAD
                 android:padding="20dp">
+=======
+                android:padding="16dp">
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:text="Daily Notes"
                     android:textStyle="bold"
                     android:fontFamily="sans-serif-medium"
                     android:textSize="18sp"
                     android:textColor="@color/primary_1"
                     android:layout_marginBottom="10dp" />
+=======
+                    android:text="Catatan Harian"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="8dp"/>
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
 
                 <EditText
                     android:id="@+id/et_notes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:hint="Write something you want to remember today..."
                     android:fontFamily="sans-serif-light"
                     android:textColor="@color/text_primary"
@@ -145,12 +192,32 @@
             android:fontFamily="sans-serif-medium"
             android:textColor="@color/primary_1"
             android:layout_marginBottom="10dp" />
+=======
+                    android:hint="Apa yang terjadi hari ini?"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:gravity="top"
+                    android:background="@android:color/transparent"
+                    android:padding="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aktivitas Hari Ini (Pilih Multi):"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_text_primary"
+            android:layout_marginBottom="8dp"/>
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
 
         <LinearLayout
             android:id="@+id/ll_activities"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+<<<<<<< HEAD
 
             <CheckBox
                 android:id="@+id/cb_work"
@@ -194,10 +261,19 @@
         </LinearLayout>
 
         <!-- SAVE BUTTON -->
+=======
+            <CheckBox android:id="@+id/cb_work" android:text="💼 Pekerjaan/Studi" style="@style/ActivityCheckboxStyle"/>
+            <CheckBox android:id="@+id/cb_social" android:text="💬 Bersosialisasi" style="@style/ActivityCheckboxStyle"/>
+            <CheckBox android:id="@+id/cb_sport" android:text="🏋️ Olahraga/Fitnes" style="@style/ActivityCheckboxStyle"/>
+            <CheckBox android:id="@+id/cb_relax" android:text="☕ Santai/Hobi" style="@style/ActivityCheckboxStyle"/>
+        </LinearLayout>
+
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
         <Button
             android:id="@+id/btn_save_mood"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:text="Save Mood"
             android:textColor="@android:color/white"
             android:backgroundTint="@color/primary_3"
@@ -208,3 +284,14 @@
             android:fontFamily="sans-serif-medium" />
     </LinearLayout>
 </ScrollView>
+=======
+            android:text="Simpan &amp; Refleksi"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/color_accent"
+            android:layout_marginTop="32dp"
+            android:paddingVertical="14dp"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377

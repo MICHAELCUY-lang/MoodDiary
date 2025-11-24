@@ -3,6 +3,7 @@
 
     <item
         android:id="@+id/nav_home"
+<<<<<<< HEAD
         android:title="Home" />
 
     <item
@@ -22,3 +23,21 @@
         android:title="Settings" />
 
 </menu>
+=======
+        android:title="🏠 Home" /> <item
+    android:id="@+id/nav_input"
+    android:title="📝 Input Mood" />
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:title="📅 History" />
+
+    <item
+        android:id="@+id/nav_stats"
+        android:title="📊 Statistik" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="⚙️ Settings" />
+</menu>
+>>>>>>> 52986eb77ee08787b4f102365a269556124a8377
